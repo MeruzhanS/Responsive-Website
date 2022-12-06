@@ -1,0 +1,92 @@
+body{
+	text-transform: capitalize;
+}
+.container{
+	text-align: center;
+	width: 100%;
+	margin: auto;
+	transform: skewY(-5deg);
+	background-color: #ff6666;
+	height: 23em;
+}
+.container>*{
+	transform: skewY(5deg);
+}
+#h1Div{
+	padding-top: 20px;
+	font-size: 1.5rem;
+	background-color: #ff6666;
+	margin-top: -10px;
+}
+input{
+	margin-top: 3%;
+	width: 50%;
+	height: 2rem;
+	border-radius: 25px;
+	font-family: "Comic Sans MS";
+	font-size: 1.5rem;
+	padding: .3em;
+}
+#blueSlant{
+	transform: skewY(10deg);
+	background-color: #00ccff;
+	height: 25rem;
+	margin-top: 13.75%;
+}
+#blueSlant>*{
+	transform: skewY(-4deg);
+	color: white;
+	padding-top: 3em;
+}
+.textArea{
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	font-size: 1.125rem;
+}
+.col1{
+	width: 30%;
+	max-height: 50rem;
+	overflow-y: scroll;
+}
+.col2{
+	width: 30%;
+	max-height: 50rem;
+	overflow-y: scroll;
+}
+.col3{
+	background-color: #212614;
+	color: white;
+	max-width: 30%;
+	max-height: 50rem;
+	overflow-y: scroll;
+}
+.col3 p{
+	padding:2rem;
+}
+#longCol{
+	background-color: #212614;
+	color: white;
+	max-width: 60%;
+	max-height: 50rem;
+	overflow-y: scroll;
+}
+#longCol p{
+	padding: 3rem;
+}
+#shortCol{
+	width: 35%;
+	line-height: 1.5rem;
+	max-height: 50rem;
+	overflow-y: scroll;
+}
+
+@media only screen and (max-width: 750px) {
+	.textArea {
+		display: block;
+	}
+	.col1, .col2, .col3, #longCol, #shortCol {
+		width: 100%;
+		max-width: 100%;
+	}
+}
